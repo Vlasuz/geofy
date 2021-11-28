@@ -1,0 +1,169 @@
+extends includes/header.pug
+
+block content
+
+	.body-bgd_top
+		img(src="img/svg/bg-vector-element-top.svg" alt="bgd")
+	.body-bgd_bottom
+		img(src="img/svg/bg-vector-element-bottom.svg" alt="bgd")
+
+	section.block-1
+		.wrapper
+			.sides
+				.sides__lft
+					p.suptitle Find location
+					h1 <span>Locate</span> any phone, <span>anywhere.</span>
+					p.subtitle Geolite let's you get a mobile phone's geo location and works on all phone types, networks and countries.
+					form(action="#")
+						label.input
+							.select
+								.select__head
+									<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+									span +38
+								.select__body
+									ul
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+											span +38
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#DC143C"/><path d="M36 0H0V12H36V0Z" fill="white"/></svg>
+											span +7
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+											span +38
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#DC143C"/><path d="M36 0H0V12H36V0Z" fill="blue"/></svg>
+											span +364
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+											span +38
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#DC143C"/><path d="M36 0H0V12H36V0Z" fill="white"/></svg>
+											span +7
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+											span +38
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#DC143C"/><path d="M36 0H0V12H36V0Z" fill="blue"/></svg>
+											span +364
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+											span +38
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#DC143C"/><path d="M36 0H0V12H36V0Z" fill="white"/></svg>
+											span +7
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#005BBB"/><path d="M36 12H0V24H36V12Z" fill="#FFD500"/></svg>
+											span +38
+										li.country-code
+											<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 0H0V24H36V0Z" fill="#DC143C"/><path d="M36 0H0V12H36V0Z" fill="blue"/></svg>
+											span +364
+							input(placeholder="Number to locate" type="tel" pattern="[0-9]{1,}")
+							.error This Number is not valid
+							button(type="submit")
+								span Start localization
+								<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3H10M10 3V12M10 3L1 12" stroke="#252525" stroke-width="1.5"/></svg>
+						p Enter in the field the number you want to geolocate.
+				.sides__rht
+					img(src="img/iphone-mck.png" alt="Phone").rht__img
+					.rht__block
+						.block__top
+							.top__lft
+								<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.122781 5.94979C0.0531846 6.02598 0.0529793 6.14261 0.122308 6.21905L2.49607 8.8361C2.57563 8.92382 2.71356 8.92357 2.79282 8.83558L3.19085 8.39363C3.25955 8.31736 3.25935 8.20146 3.19038 8.12542L0.819445 5.51148C0.740259 5.42418 0.603132 5.42394 0.52364 5.51096L0.122781 5.94979ZM10.4764 2.1634C10.397 2.07586 10.2594 2.07589 10.18 2.16347L5.47089 7.36018C5.39147 7.44782 5.25375 7.44777 5.17439 7.36007L3.50149 5.51128C3.42253 5.42402 3.28567 5.42346 3.206 5.51007L2.80153 5.94975C2.73149 6.02589 2.73108 6.14289 2.80059 6.21952L5.17444 8.83668C5.25382 8.92419 5.39135 8.92419 5.47072 8.83668L10.8781 2.87505C10.9473 2.79882 10.9473 2.68255 10.8781 2.60632L10.4764 2.1634ZM8.2007 2.87458C8.26967 2.79854 8.26987 2.68264 8.20118 2.60637L7.80314 2.16442C7.72389 2.07643 7.58595 2.07618 7.50639 2.1639L4.77306 5.17738C4.70373 5.25381 4.70394 5.37044 4.77353 5.44663L5.17439 5.88546C5.25388 5.97249 5.39101 5.97225 5.4702 5.88494L8.2007 2.87458Z" fill="#F5F5F5"/></svg>
+								span Geolocation found
+							data 12.02.21, 11:34
+						a(href="tel:+33634567890") +33 6 34 56 78 90
+						p.location 54 Sloe Lane, CUIDHTINIS, <br />HS3 0SP, UK
+					.rht__bgd
+						img(src="img/svg/bg-element.svg" alt="earth")
+
+	section.block-2
+		.wrapper
+			.block-2__info.block-2__info_1
+				img(src="img/svg/block-2-info-1.svg" alt="Icon")
+				.info__block
+					h4 All phones
+					p Geolocate any phone or smartphone.
+			.block-2__info.block-2__info_2
+				img(src="img/svg/block-2-info-2.svg" alt="Icon")
+				.info__block
+					h4 All operators
+					p Works with all mobile operator networks.
+			.block-2__map
+				img(src="img/svg/map.svg" alt="map")
+			.block-2__info.block-2__info_3
+				img(src="img/svg/block-2-info-3.svg" alt="Icon")
+				.info__block
+					h4 100% Anonymous
+					p Your data is not shared. It’s only used to communicate with you.
+			.block-2__info.block-2__info_4
+				img(src="img/svg/block-2-info-4.svg" alt="Icon")
+				.info__block
+					h4 No application
+					p Geolocation works online. So no need to install an app.
+
+	section.block-3
+		.wrapper
+			.sides
+				.block-3__bgd
+					img(src="img/svg/block-3-bgd.svg" alt="bgd")
+				.sides__lft
+					img(src="img/block-3-phone.png" alt="Phone" width="332")
+				.sides__rht
+					h2 Getting the <span>geolocation</span> of any mobile phone with us <span>is super easy</span>.
+					ul
+						li Geofy works on any devices from smartphones to notebooks.
+						li Any mobile number in the world can be tracked.
+						li Customize all the messages you want the recipient to recieve.
+						li Get the exact location displayed on a map.
+						li Easily send unlimited geolocation requests to a phone.
+					button.block-3__start.btn
+						span Start localization
+						<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 2.99976H10M10 2.99976V11.9998M10 2.99976L1 11.9998" stroke="white" stroke-width="1.5"/></svg>
+
+	section.block-4#how-id
+		.wrapper
+			h2 How it works
+			ol
+				li
+					.li__text
+						h4 Request location
+						p Enter the mobile number you want you to locate.
+				li
+					.li__text
+						h4 Geo location
+						p The recipient receives an SMS to give consent to his location.
+				li
+					.li__text
+						h4 Location display
+						p You’ll be notified and can view the exact location on the map.
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
