@@ -22,9 +22,41 @@
 </head>
 
 <body>
+  <div class="popup popup-sing-in">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <div class="popup__close">
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1" y1="-1" x2="25.5501" y2="-1" transform="matrix(0.705776 0.708435 -0.705776 0.708435 0 2)" stroke="#DDE4EE" stroke-width="2" stroke-linecap="round" />
+          <line x1="1" y1="-1" x2="25" y2="-1" transform="matrix(0.707107 -0.707107 0.704442 0.709762 1.24414 20.9827)" stroke="#DDE4EE" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="popup__ico">
+        <img src="img/svg/popup-ico.svg" alt="Ico">
+      </div>
+      <h2>Sign in</h2>
+      <form action="#">
+        <label>
+          <p>E-mail <span>(required)</span>
+          </p>
+          <input placeholder="hey@geofy.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2, 4}$" type="email">
+          <div class="error">The e-mail is not valid.</div>
+        </label>
+        <label>
+          <p>Password<span>(required)</span>
+          </p>
+          <input placeholder="********" type="password">
+        </label><a class="forgot" href="#">Forgot password?</a>
+        <button class="btn">Sign in</button>
+      </form>
+    </div>
+  </div>
   <header>
     <div class="wrapper">
-      <div class="header"><a class="header__logo" href="index.html">App Logotype</a>
+      <div class="header">
+        <a class="header__logo" href="index.html">
+          <img src="img/svg/logo.svg" alt="Logo"><span>Geofindy</span>
+        </a>
         <nav class="header__menu">
           <ul>
             <li><a href="index.html#how-id">How it works</a>
@@ -37,12 +69,17 @@
             </li>
           </ul>
         </nav>
-        <button class="header__singin btn">Sign in</button>
+        <button class="header__singin btn" data-popup="sing-in">Sign in</button>
+        <div class="header__burger">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </div>
     </div>
   </header>
   <div class="body-bgd_top">
-    <img src="img/svg/bg-vector-element-top.svg" alt="bgd">
+    <img class="desk" src="img/svg/bg-vector-element-top.svg" alt="bgd">
+    <img class="mob" src="img/svg/bg-vector-element-top-mob.svg" alt="bgd">
   </div>
   <main class="page-pricing">
     <section class="block-1">
@@ -194,7 +231,7 @@
             </li>
           </ul>
           <a class="footer__logo" href="#">
-            <img src="img/svg/logo-footer.svg" alt="Logo"><span>Logotype</span>
+            <img src="img/svg/logo-footer.svg" alt="Logo"><span>Geofindy</span>
           </a>
         </div>
         <div class="footer__copyright">©Geofy 2021</div>

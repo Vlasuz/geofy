@@ -2,10 +2,12 @@ extends includes/header.pug
 
 block content
 
-	.body-bgd_top
-		img(src="img/svg/bg-vector-element-top-3.svg" alt="bgd")
-	.body-bgd_bottom
-		img(src="img/svg/bg-vector-element-bottom.svg" alt="bgd")
+	.body-bgd_top.bgd-policy-t
+		img(src="img/svg/bg-vector-element-top-3.svg" alt="bgd").desk
+		img(src="img/svg/bg-vector-element-top-3-mob.svg" alt="bgd").mob
+	.body-bgd_bottom.bgd-policy-b
+		img(src="img/svg/bg-vector-element-bottom.svg" alt="bgd").desk
+		img(src="img/svg/bg-vector-element-bottom-mob.svg" alt="bgd").mob
 
 	main.page-privacy
 		.wrapper

@@ -28,10 +28,34 @@ html(lang="en")
 
 	body
 
+		.popup.popup-sing-in
+			.popup__bgd
+			.popup__content
+				.popup__close
+					<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="1" y1="-1" x2="25.5501" y2="-1" transform="matrix(0.705776 0.708435 -0.705776 0.708435 0 2)" stroke="#DDE4EE" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="-1" x2="25" y2="-1" transform="matrix(0.707107 -0.707107 0.704442 0.709762 1.24414 20.9827)" stroke="#DDE4EE" stroke-width="2" stroke-linecap="round"/></svg>
+				.popup__ico
+					img(src="img/svg/popup-ico.svg" alt="Ico")
+				h2 Sign in
+				form(action="#")
+					label
+						p E-mail 
+							span (required)
+						input(placeholder="hey@geofy.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" type="email")
+						.error The e-mail is not valid.
+					label
+						p Password
+							span (required)
+						input(placeholder="********" type="password")
+					a(href="#").forgot Forgot password?
+					button.btn Sign in
+
+
 		header
 			.wrapper
 				.header
-					a(href="index.html").header__logo App Logotype
+					a(href="index.html").header__logo
+						img(src="img/svg/logo.svg" alt="Logo")
+						span Geofindy
 					nav.header__menu
 						ul
 							li
@@ -42,7 +66,10 @@ html(lang="en")
 								a(href="faq.html") FAQ
 							li
 								a(href="contact.html") Contact
-					button.header__singin.btn Sign in
+					button.header__singin.btn(data-popup="sing-in") Sign in
+					.header__burger
+						.line
+						.line
 		
 		block content
 
